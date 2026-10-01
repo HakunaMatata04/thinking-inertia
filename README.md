@@ -1,18 +1,17 @@
-# Thinking Inertia
+# 🧠 Thinking Inertia
 
 ## LLMs Keep Thinking When Told Not To
 
 Evaluation code for studying visible pre-answer text under no-thinking
-instructions. The repository focuses on the response parser, benchmark
-scoring, six-mode intervention runner, and metric-validation utilities. It is
+instructions. This release focuses on the response parser, benchmark scoring,
+the six-mode intervention runner, and the metric-validation utilities. It is
 not a copy of the paper's LaTeX or figure-production workspace.
 
 ## News
 
-- **2026.10** — Public release of the evaluation code and selected aggregate
-  results.
+- **2026.10** — Public release of the evaluation and metric-validation code.
 
-## Overview
+## 🔎 Overview
 
 We study whether a model that is instructed to answer directly still emits
 visible pre-answer text. Each response is represented as a pre-answer field
@@ -36,7 +35,7 @@ are response-level observables; they do not claim to reveal latent cognition.
   <img src="assets/overview.png" alt="ETR, EIR, QRel., and visible token length across answer spaces and intervention modes" width="96%">
 </p>
 
-## Key findings
+## 📌 Key findings
 
 - **Answer-space staircase.** The visible-inference ordering is `Bool < MCQ <
   Open`, with open-ended answers retaining the most explicit pre-answer work.
@@ -45,7 +44,16 @@ are response-level observables; they do not claim to reveal latent cognition.
 - **Observable, not latent.** ETR, QRel., and EIR characterize the emitted
   response; they are not claims about hidden cognition.
 
-## Installation
+## 📦 Release scope
+
+This repository is intentionally source-focused. It includes the reusable
+runner, parsers, benchmark inputs, metric implementations, rubrics, and
+command-line examples needed to reproduce the analysis on user-supplied model
+outputs. It does **not** include paper source, raw response corpora, provider
+logs, API results, judge-label files, human-review packages, or aggregate result
+tables; those materials are retained separately as the research record.
+
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/HakunaMatata04/thinking-inertia.git
@@ -59,7 +67,7 @@ python -m pip install -e .
 The evaluator needs Python 3.10 or newer. Model serving is external and can be
 any OpenAI-compatible endpoint; no provider credential is stored here.
 
-## Quick start
+## 🚀 Quick start
 
 Download the normalized benchmark inputs:
 
@@ -92,7 +100,7 @@ For a minimal parser/accuracy check, use:
 python -m thinking_inertia.eval_nonreason --help
 ```
 
-## Repository layout
+## 🗂️ Repository layout
 
 ```text
 src/thinking_inertia/   Dataset loading, response parsing, scoring, and runners
@@ -108,14 +116,14 @@ the original local evaluator. It should not be confused with the paper's final
 instruction-aware Qwen3-Embedding-4B QRel. analysis; the final metric pipeline
 is provided separately under `repro/metrics/`.
 
-## Data and models
+## 🧪 Data and models
 
 The files under `data/processed/` are normalized inputs derived from public
 benchmarks. Users must follow each upstream dataset's license and terms. The
 model endpoint, model weights, tokenizer, and API credentials are supplied by
 the user at runtime and are not distributed by this repository.
 
-## Citation
+## 📚 Citation
 
 ```bibtex
 @article{lei2026thinkinginertia,

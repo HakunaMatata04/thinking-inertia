@@ -192,7 +192,7 @@ def main() -> None:
     for row in rows:
         text = row["pre_answer_text"]
         row["qrel"] = (
-            max(float(np.dot(q_vectors[row["question"]], t_vectors[text])), 0.0)
+            float(np.dot(q_vectors[row["question"]], t_vectors[text]))
             if text
             else 0.0
         )
