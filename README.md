@@ -57,11 +57,11 @@ are response-level observables; they do not claim to reveal latent cognition.
 ## 📦 Release scope
 
 This repository is intentionally source-focused. It includes the reusable
-runner, parsers, benchmark inputs, metric implementations, rubrics, and
-command-line examples needed to reproduce the analysis on user-supplied model
-outputs. It does **not** include paper source, raw response corpora, provider
-logs, API results, judge-label files, human-review packages, or aggregate result
-tables; those materials are retained separately as the research record.
+runner, parsers, benchmark inputs, and response-level metric utilities. It does
+**not** include paper source, raw response corpora, provider logs, API results,
+judge-label files, human-review packages, paper-specific full-corpus
+aggregation, or figure-generation scripts; those materials are retained
+separately as the research record.
 
 ## ⚙️ Installation
 
@@ -113,8 +113,7 @@ python -m thinking_inertia.eval_nonreason --help
 ## 🗂️ Repository layout
 
 ```text
-src/thinking_inertia/   Dataset loading, response parsing, scoring, and runners
-repro/metrics/          QRel., EIR, domain, and human-validation utilities
+src/thinking_inertia/   Dataset loading, response parsing, scoring, runners, and metrics
 data/processed/         Normalized public benchmark inputs
 outputs/                Local generated records and aggregates (ignored)
 pyproject.toml          Package metadata and command-line entry points
@@ -123,8 +122,8 @@ requirements.txt        Runtime dependencies
 
 The source tree retains a MiniLM-based similarity scorer for compatibility with
 the original local evaluator. It should not be confused with the paper's final
-instruction-aware Qwen3-Embedding-4B QRel. analysis; the final metric pipeline
-is provided separately under `repro/metrics/`.
+instruction-aware Qwen3-Embedding-4B QRel. analysis; reusable QRel. and EIR
+utilities are provided under `src/thinking_inertia/metrics/`.
 
 ## 🧪 Data and models
 

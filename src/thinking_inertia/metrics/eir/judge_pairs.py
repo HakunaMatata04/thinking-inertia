@@ -10,9 +10,7 @@ import os
 from pathlib import Path
 from typing import Any
 
-from openai import AsyncOpenAI
-
-from judge_rubric import (
+from .judge_rubric import (
     CATEGORIES,
     SYSTEM_PROMPT,
     evidence_is_verbatim,
@@ -20,7 +18,7 @@ from judge_rubric import (
 )
 
 
-RESULTS_DIR = Path(__file__).resolve().parents[3] / "outputs/eir"
+RESULTS_DIR = Path(__file__).resolve().parents[4] / "outputs/eir"
 
 
 def parse_args() -> argparse.Namespace:
@@ -146,6 +144,8 @@ async def judge_batch(
 
 
 async def main_async(args: argparse.Namespace) -> None:
+    from openai import AsyncOpenAI
+
     api_key = os.environ.get("DMX_API_KEY") or os.environ.get("OPENAI_API_KEY")
     if not api_key:
         raise RuntimeError("set DMX_API_KEY or OPENAI_API_KEY")

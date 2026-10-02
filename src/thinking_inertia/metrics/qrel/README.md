@@ -1,9 +1,8 @@
-# QRel. rescoring
+# QRel. scoring
 
-This scorer computes the paper's instruction-aware question--pre-answer
-relevance (QRel.) with Qwen3-Embedding-4B. It accepts the controlled
-experiment `records.jsonl` files as an external input; raw records are not
-distributed in this repository.
+This scorer computes instruction-aware question--pre-answer relevance (QRel.)
+with Qwen3-Embedding-4B. It accepts the controlled-experiment `records.jsonl`
+files as an external input; raw records are not distributed in this repository.
 
 - Query: the complete question `Q`, encoded with the instruction `Given a
   question, retrieve pre-answer text that contains reasoning relevant to
@@ -14,7 +13,7 @@ distributed in this repository.
 Example:
 
 ```bash
-python repro/metrics/qrel/score_controlled_qrel.py \
+python -m thinking_inertia.metrics.qrel.score_controlled_qrel \
   --run-root /path/to/controlled-experiments \
   --model-path Qwen/Qwen3-Embedding-4B \
   --device cuda:0 \
@@ -24,4 +23,6 @@ python repro/metrics/qrel/score_controlled_qrel.py \
 
 The scorer writes per-example `item_qrel.csv` and grouped
 `aggregate_qrel.csv` under the ignored local output directory. The source
-questions and pre-answer text remain external inputs.
+questions and pre-answer text remain external inputs. Paper-specific full-corpus
+aggregation and figure generation are intentionally not part of this public
+source release.

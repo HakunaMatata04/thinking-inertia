@@ -14,7 +14,7 @@ from typing import Any
 import numpy as np
 
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
+REPO_ROOT = Path(__file__).resolve().parents[4]
 TASK = (
     "Given a question, retrieve pre-answer text that contains reasoning relevant "
     "to answering the question"
