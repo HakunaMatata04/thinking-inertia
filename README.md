@@ -1,8 +1,6 @@
 <div align="center">
 
-<h1>Thinking Inertia</h1>
-
-<h3>LLMs Keep Thinking When Told Not To</h3>
+<h1>Thinking Inertia: LLMs Keep Thinking When Told Not To</h1>
 
 <p><strong>Dianqiao Lei<sup>1</sup> · Kevin Qinghong Lin<sup>2</sup><sup>†</sup><sup>✉</sup> · Pan Lu<sup>3</sup> · Philip Torr<sup>2</sup><sup>✉</sup> · James Zou<sup>3</sup><sup>✉</sup></strong></p>
 
@@ -11,9 +9,8 @@
 <sup>†</sup> Project lead · <sup>✉</sup> Correspondence
 
 <p>
-  <a href="https://github.com/HakunaMatata04/thinking-inertia"><img alt="Repository" src="https://img.shields.io/badge/Repository-GitHub-24292f?logo=github"></a>
-  <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white"></a>
-  <a href="#-overview"><img alt="Metrics" src="https://img.shields.io/badge/Metrics-ETR%20%7C%20QRel.%20%7C%20EIR-6f42c1"></a>
+  <img alt="arXiv link pending" src="https://img.shields.io/badge/arXiv-link%20pending-b31b1b">
+  <img alt="Project Page link pending" src="https://img.shields.io/badge/Project%20Page-link%20pending-5b9e1e">
 </p>
 
 <em>Response-level evidence for when language models keep thinking after being told not to.</em>
