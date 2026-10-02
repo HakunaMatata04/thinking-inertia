@@ -1,13 +1,22 @@
-# 🧠 Thinking Inertia
+<div align="center">
 
-## LLMs Keep Thinking When Told Not To
+# Thinking Inertia
 
-Evaluation code for studying visible pre-answer text under no-thinking
-instructions. This release focuses on the response parser, benchmark scoring,
-the six-mode intervention runner, and the metric-validation utilities. It is
-not a copy of the paper's LaTeX or figure-production workspace.
+### LLMs Keep Thinking When Told Not To
 
-## News
+**Dianqiao Lei<sup>1</sup> · Kevin Qinghong Lin<sup>2</sup><sup>†</sup> · Pan Lu<sup>3</sup> · Philip Torr<sup>2</sup> · James Zou<sup>3</sup>**
+
+<sup>1</sup> Tsinghua University · <sup>2</sup> University of Oxford · <sup>3</sup> Stanford University
+
+<sup>†</sup> Project lead · ✉ Correspondence: [Kevin Qinghong Lin](mailto:kevin.qh.lin@gmail.com)
+
+[![Repository](https://img.shields.io/badge/Repository-GitHub-24292f?logo=github)](https://github.com/HakunaMatata04/thinking-inertia) [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Metrics](https://img.shields.io/badge/Metrics-ETR%20%7C%20QRel.%20%7C%20EIR-6f42c1)](#-overview)
+
+*Response-level evidence for when language models keep thinking after being told not to.*
+
+</div>
+
+## 📣 News
 
 - **2026.10** — Public release of the evaluation and metric-validation code.
 
