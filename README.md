@@ -4,11 +4,11 @@
 
 <h3>LLMs Keep Thinking When Told Not To</h3>
 
-<p><strong>Dianqiao Lei<sup>1</sup> · Kevin Qinghong Lin<sup>2</sup><sup>†</sup> · Pan Lu<sup>3</sup> · Philip Torr<sup>2</sup> · James Zou<sup>3</sup></strong></p>
+<p><strong>Dianqiao Lei<sup>1</sup> · Kevin Qinghong Lin<sup>2</sup><sup>†</sup><sup>✉</sup> · Pan Lu<sup>3</sup> · Philip Torr<sup>2</sup><sup>✉</sup> · James Zou<sup>3</sup><sup>✉</sup></strong></p>
 
 <sup>1</sup> Tsinghua University · <sup>2</sup> University of Oxford · <sup>3</sup> Stanford University
 
-<sup>†</sup> Project lead · ✉ Correspondence: <a href="mailto:kevin.qh.lin@gmail.com">Kevin Qinghong Lin</a>
+<sup>†</sup> Project lead · <sup>✉</sup> Correspondence
 
 <p>
   <a href="https://github.com/HakunaMatata04/thinking-inertia"><img alt="Repository" src="https://img.shields.io/badge/Repository-GitHub-24292f?logo=github"></a>
