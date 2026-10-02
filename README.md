@@ -1,18 +1,22 @@
 <div align="center">
 
-# Thinking Inertia
+<h1>Thinking Inertia</h1>
 
-### LLMs Keep Thinking When Told Not To
+<h3>LLMs Keep Thinking When Told Not To</h3>
 
-**Dianqiao Lei<sup>1</sup> · Kevin Qinghong Lin<sup>2</sup><sup>†</sup> · Pan Lu<sup>3</sup> · Philip Torr<sup>2</sup> · James Zou<sup>3</sup>**
+<p><strong>Dianqiao Lei<sup>1</sup> · Kevin Qinghong Lin<sup>2</sup><sup>†</sup> · Pan Lu<sup>3</sup> · Philip Torr<sup>2</sup> · James Zou<sup>3</sup></strong></p>
 
 <sup>1</sup> Tsinghua University · <sup>2</sup> University of Oxford · <sup>3</sup> Stanford University
 
-<sup>†</sup> Project lead · ✉ Correspondence: [Kevin Qinghong Lin](mailto:kevin.qh.lin@gmail.com)
+<sup>†</sup> Project lead · ✉ Correspondence: <a href="mailto:kevin.qh.lin@gmail.com">Kevin Qinghong Lin</a>
 
-[![Repository](https://img.shields.io/badge/Repository-GitHub-24292f?logo=github)](https://github.com/HakunaMatata04/thinking-inertia) [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Metrics](https://img.shields.io/badge/Metrics-ETR%20%7C%20QRel.%20%7C%20EIR-6f42c1)](#-overview)
+<p>
+  <a href="https://github.com/HakunaMatata04/thinking-inertia"><img alt="Repository" src="https://img.shields.io/badge/Repository-GitHub-24292f?logo=github"></a>
+  <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white"></a>
+  <a href="#-overview"><img alt="Metrics" src="https://img.shields.io/badge/Metrics-ETR%20%7C%20QRel.%20%7C%20EIR-6f42c1"></a>
+</p>
 
-*Response-level evidence for when language models keep thinking after being told not to.*
+<em>Response-level evidence for when language models keep thinking after being told not to.</em>
 
 </div>
 
